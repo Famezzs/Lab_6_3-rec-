@@ -71,7 +71,7 @@ int MinElem(int *a, const int size, int min, const int i)
 		if (a[i] < min)
 			min = a[i];
 
-		MinElem(a, size, min, i + 1);
+		return MinElem(a, size, min, i + 1);
 	}
 	else
 		return min;
